@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .gallery-item {
+            text-align: center;
+            width: calc(50% - 40px);
+            margin: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+        }
+        .gallery button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .gallery button:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 600px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_396,q_75,w_704/v1/crm/annarbor/20181116_1915390-fe56ff9e5056a36_fe57016a-5056-a36a-062014df2242af00.jpg" alt="Placeholder Image 1">
+        <button  onclick="handlefinalClick()">Pacific Rim(Asian)</button>
+    </div>
+    <div class="gallery-item">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/fe/a7/48/aventura-ann-arbor.jpg?w=1800&h=1000&s=1" alt="Placeholder Image 2">
+        <button onclick="handlefinalClick()">Aventura(tapas)</button>
+    </div>
+    <div class="gallery-item">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipMhCxnjHceW8O9V6RdEZxbAjeaNkaFMY97hRC47=s1360-w1360-h1020">
+        <button onclick="handlefinalClick()">Best option</button>
+    </div>
+    <div class="gallery-item">
+        <img src="https://static.spotapps.co/website_images/ab_websites/68310_website/video_poster_1.jpg" alt="Placeholder Image 4">
+        <button onclick="handlefinalClick()">Chop House</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
